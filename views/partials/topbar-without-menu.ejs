@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="/styles/loadingbar.css">
+
+ <div class="navbar navbar-fixed-top header">
+  <div class="col-md-12">
+        <div class="navbar-header">
+           <a class="navbar-brand" href="/"> 
+<i class="fa fa-sort-amount-desc" id="gitlist-logo"></i>
+           <!-- <img src="/images/white_icon_gitlist.png" style="height:46px;width:46px;margin-top: -6px;" class="" alt="avatar"> --></a>          <a class="navbar-brand-gitlist" href="#">Gitlist <!--<h13>v.0.0.1 </h13> --><br> <!--<h13>the best <strong> way </strong> to share <strong> Git.</strong> </h13> --> </a>
+       <!--   <a href="#" class="navbar-brand">Bootstrap</a> -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+<i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse1">
+          <form class="navbar-form pull-left">
+              <div class="input-group" style="max-width:470px;">
+              <!--  <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"> 
+                <div class="input-group-btn">
+                  <button class="btn btn-default btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div> -->
+              </div>
+          </form>
+            <!--   <div class="navbar-brand navbar-brand-centered">
+                    <ul class="nav navbar-nav navbar-center">
+                    <p class="gitlist-search-option-top">Search your needed Git   <a href="#search"><i class="fa fa-search"></i> Search</a></p> 
+                </ul>
+               </div> -->
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="/g/add" id="submit-git-link">+Submit Git</a></li>
+              <li>
+              <!--   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></a> -->
+                 <ul class="dropdown-menu">
+                    <li><a href="#"><span class="badge pull-right">40</span>Link</a></li>
+                    <li><a href="#"><span class="badge pull-right">2</span>Link</a></li>
+                    <li><a href="#"><span class="badge pull-right">0</span>Link</a></li>
+                    <li><a href="#"><span class="label label-info pull-right">1</span>Link</a></li>
+                    <li><a href="#"><span class="badge pull-right">13</span>Link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown" id="gitlist-sigin-user-small-profile-image-top-menu">
+              <% if(username != "") { %>
+                  <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown" aria-expanded="false">
+                  <img id="userImage" src="<%- picture %>" style="width:30px;height:30px;" class="img-circle special-img"><!--<b class="caret"></b>--></a>
+              <% } %>
+              <!--    <ul class="dropdown-menu" id="gitlist-user-settings">
+                    <li><a href="/g/settings"><i class="fa fa-cog"></i> Account</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/g/usergits"><i class="fa fa-sign-out"></i> My List</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> invite friends</a></li>
+                    <li><a href="/info/about"><i class="fa fa-sign-out"></i> About Us</a></li>
+                    <li><a href="/g/settings"><i class="fa fa-sign-out"></i> Settings</a></li>
+                    <li><a href="/logout"><i class="fa fa-sign-out"></i> Sign-out</a></li>
+                  </ul>  -->
+              </li>
+              <li id="gl-respon-23"><a href="/" id="btnToggle" class="gl-respon-23"><i class="fa fa-list"></i></a></li>
+              <% if(username != "") { %>
+                  <li id="gl-respon-23"><a id="user_profile" href="/<%- slug %>" class="gl-respon-23"><i class="fa fa-user"></i></a></li>
+                  <li><a href="/logout" class="logout-btn btn btn-gitlist-sign-up-black-front" id="color-blue">Log Out</a></li>
+              <% } else { %>
+                  <li><a href="/g/login" class="login-btn btn btn-gitlist-sign-up-black-front" id="color-blue">Sign IN</a></li>
+              <% } %>              
+          </ul>
+        </div>  
+     </div> 
+</div>

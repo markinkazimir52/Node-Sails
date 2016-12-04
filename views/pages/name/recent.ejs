@@ -1,0 +1,610 @@
+  <div class="navbar navbar-fixed-top header">
+  <div class="col-md-12">
+        <div class="navbar-header">
+           <a class="navbar-brand" href="#"> <img src="../images/white_icon_gitlist.png" style="height:46px;width:46px;margin-top: -6px;" class="" alt="avatar"></a>
+          <a class="navbar-brand-gitlist" href="#">Gitlist.io <h13>v.0.0.1 </h13><br> <h13>the best <strong> way </strong> to share <strong> Git.</strong> </h13></a>
+       <!--   <a href="#" class="navbar-brand">Bootstrap</a> -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+          <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse1">
+          <form class="navbar-form pull-left">
+              <div class="input-group" style="max-width:470px;">
+              <!--  <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"> 
+                <div class="input-group-btn">
+                  <button class="btn btn-default btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div> -->
+              </div>
+          </form>
+               <div class="navbar-brand navbar-brand-centered">
+                    <ul class="nav navbar-nav navbar-center">
+                    <p class="gitlist-search-option-top">Search your needed Git   <a href="#search"><i class="fa fa-search"></i> Search</a></p> 
+                </ul>
+               </div>
+          <ul class="nav navbar-nav navbar-right">
+             <li><a href="http://www.gitlist.io" target="_ext">gitlist+</a></li>
+             <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></a>
+                 <ul class="dropdown-menu">
+                    <li><a href="#"><span class="badge pull-right">40</span>Link</a></li>
+                    <li><a href="#"><span class="badge pull-right">2</span>Link</a></li>
+                    <li><a href="#"><span class="badge pull-right">0</span>Link</a></li>
+                    <li><a href="#"><span class="label label-info pull-right">1</span>Link</a></li>
+                    <li><a href="#"><span class="badge pull-right">13</span>Link</a></li>
+                </ul>
+             </li>
+             <li><a href="#" id="btnToggle"><i class="fa fa-list"></i></a></li>
+             <li><a href="#"><i class="fa fa-user"></i></a></li>
+             <li><a href="../navbar-fixed-top/" class="btn btn-gitlist-sign-up-black-front" id="color-blue">Sign IN</a></li>
+          </ul>
+        </div>  
+     </div> 
+</div>
+<div class="navbar navbar-default" id="subnav">
+    <div class="col-md-12">
+        <div class="navbar-header">
+          
+          <a href="#" style="margin-left:15px;" class="navbar-btn btn btn-default btn-plus dropdown-toggle" data-toggle="dropdown" id="gitlist-header-top"><i class="fa fa-home" style="color:#4285f4;"></i> Home <small><i class="fa fa-list"></i></small></a>
+          <ul class="nav dropdown-menu">
+              <li><a href="#"><i class="fa fa-user-md" style="color:#1111dd;"></i> Profile</a></li>
+              <li><a href="#"><i class="fa fa-clipboard" style="color:#0000aa;"></i> Dashboard</a></li>
+              <li><a href="#"><i class="fa fa-inbox" style="color:#11dd11;"></i> Pages</a></li>
+              <li class="nav-divider"></li>
+              <li><a href="#"><i class="fa fa-cog" style="color:#dd1111;"></i> Settings</a></li>
+              <li><a href="#"><i class="fa fa-plus"></i> More..</a></li>
+          </ul>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse2">
+          <ul class="nav navbar-nav navbar"><!-- -right -->
+                <li class="active"><a  href="#">Trending</a></li>
+          <li><a href="#">Popular Gits</a></li>
+          <li><a href="#">Staff Picks</a></li>
+          <li><a href="#">Recent Gits</a></li>
+          <li><a href="#">Most Voted</a></li>
+           </ul>
+        </div>  
+     </div> 
+</div>
+
+
+
+
+
+
+
+
+<!-- Container for the user details conatiner --> 
+
+
+<div class="container small" id="gitlist-uhu">
+     <div class="gitlist-profile">
+                <button class="btn btn-primary btn-lg" role="button" id="gitlist-follow-button-top" style="position: absolute;top: 10px;
+  right: 15px;
+  z-index: 1;
+  border-radius: 90px;"><i class="fa fa-plus"></i> Follow</button>
+
+                <!-- user image profile background pictures --> 
+
+                  <img align="left" class="gitlist-image-lg" src="https://ununsplash.imgix.net/19/waves.JPG?q=75&fm=jpg&s=6f316bc8e1dc9887a7cebe0841096e99" alt="gitlist user background image"/>
+
+                <!-- user image profile  pictures --> 
+
+                  <img align="left" class="gitlist-image-profile thumbnail" src="https://pbs.twimg.com/profile_images/584992914050326528/e349Y3Et_400x400.png" alt="gitlist user profile images"/>
+
+
+  <div class="btn-group dropup pull-right" id="gitlist-uxui-user-settings-section">
+        <button type="button" class="btn btn-primary" id="gitlist-user-profile-options-buttons"><span class="fa fa-gear"></span> Options </button>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                              <ul class="dropdown-menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Settings</a></li>
+                              </ul>
+                       </div>
+          <div class="gitlist-profile-text">
+            <!--/*col-md-offset-0 col-md-8 col-lg-offset-0 col-lg-6*/ -->
+   <div class="">
+               <div class="well profile">
+
+<!-- User Profile Informations (note: User settings and descriptions @ gitlist :) --> 
+
+     <!-- user name --> 
+            <h1>Lucas Gatsas</h1>
+
+            <!-- user descriptions and <p> --> 
+            <div class="gitlist-user-small-description-profile-site">
+            <p>Founder and CEO @ Gitlist. Designer and Developer @Code and Space in St. Gallen Switzerland. </p>
+              </div> 
+
+                                  <!-- Link Profile user website link or twitter or whatever -->
+
+                  <div class="gitlist-user-small-description-profile-site-link">
+                    <a href="https://www.twitter.com/LucasGatsas">www.spaceandcode.com</a> 
+                  </div>
+
+                  <div class="col-sm-12">
+                      <div class="col-xs-12 col-sm-8">
+                      </div>           
+                        </div>  
+                        <div class="col-xs-12 divider text-center" id="gitlist-follower-folloing-section">
+                            <div class="col-xs-12 col-sm-4">
+                                <h2><strong> 20,7K </strong></h2>                    
+                                <p><small>Followers</small></p>
+                            <!--    <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button> --> 
+                            </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h2><strong>245</strong></h2>                    
+                            <p><small>Following</small></p>
+                           <!-- <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile </button> -->
+                        </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <h2><strong>43</strong></h2>                    
+                    <p><small>+gitlist</small></p>
+
+      
+                        </div>
+                   </div>
+                </div>
+            </div>                 
+        </div>
+    </div>
+</div> <!-- /container -->  
+   
+
+
+
+<!-- This is the Part for the user information right above -->
+
+<!-- 
+            <div class="vcard-stats">
+        <a class="vcard-stat" href="/SpaceG/followers">
+          <strong class="vcard-stat-count">7</strong>
+          <span class="text-muted">Followers</span>
+        </a>
+        <a class="vcard-stat" href="/stars">
+          <strong class="vcard-stat-count">51</strong>
+          <span class="text-muted">Starred</span>
+        </a>
+        <a class="vcard-stat" href="/SpaceG/following">
+          <strong class="vcard-stat-count">7</strong>
+          <span class="text-muted">Following</span>
+        </a>
+      </div> --><!--
+            <p>Founder and CEO @ Gitlist.</p> -->
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+         <div class="well profile">
+            <div class="col-sm-12">
+                <div class="col-xs-12 col-sm-8">
+                  
+                </div>            
+             
+            </div>            
+            <div class="col-xs-12 divider text-center">
+                <div class="col-xs-12 col-sm-4">
+                    <h2><strong> 20,7K </strong></h2>                    
+                    <p><small>Followers</small></p>
+                    <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h2><strong>245</strong></h2>                    
+                    <p><small>Following</small></p>
+                    <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile </button>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h2><strong>43</strong></h2>                    
+                    <p><small>Snippets</small></p>
+                    <div class="btn-group dropup btn-block">
+                      <button type="button" class="btn btn-primary"><span class="fa fa-gear"></span> Options </button>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu text-left" role="menu">
+                        <li><a href="#"><span class="fa fa-envelope pull-right"></span> Send an email </a></li>
+                        <li><a href="#"><span class="fa fa-list pull-right"></span> Add or remove from a list  </a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="fa fa-warning pull-right"></span>Report this user for spam</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#" class="btn disabled" role="button"> Unfollow </a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+         </div>                 
+        </div>
+
+-->
+
+
+
+
+          
+<!-- Navbar User Gitlist Page -->
+<nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a  href="#">Best Gits</a></li>
+          <li><a href="#">Recent Gits</a></li>
+          <li><a href="#">Voted Up</a></li>
+          <li><a href="#">Gitlits</a></li>
+          <li>
+
+            <!--
+<button class="btn btn-primary btn-gitlist-user-follow-sign" onclick="postContactToGoogle()" type="button">follow @LucasGatsas</button></li> -->
+        <!--  <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li> -->
+
+          <!-- followers and following. --> 
+
+<!--
+          <li><a href="#"> <i class="fa fa-user-plus"></i> 393
+Following</a></li>
+          <li><a href="#"> <i class="fa fa-user"></i> 375
+Followers</a></li>
+
+-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+
+
+
+<!-- gitlist-sectionspace2 -->
+<section id="gitlist-userpage-sectionspace" class="pad-section">
+  <div class="container small" id="gitlist-container">
+    <div class="row">
+      <div class="col-sm-12">
+      <div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">13</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/562741191653875712/93TyTG3x.png">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">my New Jekyll Theme Clean Magic </a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Switzerland</a>
+                <a href="#">#Git #oAuth</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="right-options">
+
+            <div class="buttons dropdown">
+
+
+
+
+
+              <a class="comment-count loading" data-remote="true" href="#">
+              <i class="fa fa-comments"></i> <span>4</span>
+</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+<div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">08</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/562741191653875712/93TyTG3x.png">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">my Ghost Theme - Ghostspace V.0.1.0</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Italy</a>
+                <a href="#">#Code #Github</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="right-options">
+
+            <div class="buttons dropdown">
+
+
+
+
+
+              <a class="comment-count loading" data-remote="true" href="#">
+            <i class="fa fa-comments"></i> <span>4</span>
+</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">08</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/535819426193346560/880Wc3PX_400x400.jpeg">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">My Wordpress Theme Science Medium Theme V.0.2.2</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Italy</a>
+                <a href="#">#Code #Github</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="right-options">
+
+            <div class="buttons dropdown">
+
+
+
+
+
+              <a class="comment-count loading" data-remote="true" href="#">
+             <i class="fa fa-comments"></i> <span>4</span>
+</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Alerts and Add banners Here --> 
+<!-- /gitlist-sectionspace1 --> <!-- gitlist-sectionspace3 -->
+      <section id="gitlist-sectionspace-alerts" class="pad-section">
+              <div class="container alerts-adds">
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                  <div class="alert alert-error">  
+                  <a class="close" data-dismiss="alert" id="gitlist-banner-1">×</a>  
+                    Hey, developers! Check out this collection of fun and useful 
+                    <strong>Github</strong> products.     
+                    <button type="button" class="btn btn-primary btn-lg">View Collection</button>
+                    </div>  
+                    <!--<div class="alert alert-success">  
+                    <a class="close" data-dismiss="alert">×</a>  
+                    <strong>Success!</strong>You have successfully done it.  
+                    </div> --> <!--
+                    <div class="alert alert-info">  
+                    <a class="close" data-dismiss="alert">×</a>  
+                    <strong>Info!</strong>Watch this, but you may forget.  
+                    </div>   -->
+                    </div>
+                  </div>
+                </div>
+        </section>
+<!-- End Alerts and Add banners Here --> 
+<!-- End gitlist-sectionspace1 --> <!-- gitlist-sectionspace3 -->
+
+
+
+
+
+<!-- gitlist-sectionspace-about -->
+<section id="gitlist-sectionspace-user-edit-gitlist" class="pad-section">
+  <div class="container editusersgitlist" id="gitlist-container">
+   <div class="row">
+           <!--     <h2 class="page-header-about">Our Team</h2> -->
+            </div>
+            <div class="col-xs-6">
+               
+            </div>     
+  </div>
+</section>
+
+
+
+<!-- gitlist-sectionspace-about-top -->
+<!--
+<section id="gitlist-sectionspace-add-gitlist-list" class="pad-section">
+              <div class="container addgitlist" id="gitlist-container">
+                  <div class="row">
+                                <h2 class="page-header-addgitlist">What is Gitlist?</h2><br>
+                                <p class="page-p-addgitlist">Gitlist is a Git Sharing Network for Coders, Programmers and Web Designer to share they current Gits Online to the Public.</p>
+
+                      </div> 
+                </div>
+          </section> -->
+
+
+<!-- /gitlist-sectionspace1 --> <!-- gitlist-sectionspace3 -->
+<!--<section id="gitlist-sectionspace-alerts" class="pad-section">
+  <div class="container alerts-adds">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+      <div class="alert alert-error">  
+  <a class="close" data-dismiss="alert" id="gitlist-banner-1">×</a>  
+Hey, developers! Check out this collection of fun and useful <strong>Github</strong> products.     
+  <button type="button" class="btn btn-primary btn-lg">
+      View Collection
+   </button>
+</div> --> <!--
+<div class="alert alert-success">  
+  <a class="close" data-dismiss="alert">×</a>  
+  <strong>Success!</strong>You have successfully done it.  
+</div> --> <!--
+<div class="alert alert-info">  
+  <a class="close" data-dismiss="alert">×</a>  
+  <strong>Info!</strong>Watch this, but you may forget.  
+</div>  -->
+
+    <!--  </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- /gitlist-sectionspace-rest-part-1 --> 
+
+<!--
+<section id="gitlist-sectionspace-rest-part-1">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2>Start your Free Gitlist Today!
+                    </h2><br>
+                    <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target="#largeModal"> <i class="fa fa-sort-amount-desc"></i> SIGN UP</a>
+                </div>
+            </div>
+</section>
+-->
+
+
+
+
+<!-- /gitlist-sectionspace3 --> 
+<!-- /gitlist-sectionspace-rest-part-1 --> 
+<section id="gitlist-sectionspace-rest-part-1">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2>Start your Free Gitlist Today!
+                    </h2><br>
+                    <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target="#largeModal"> <i class="fa fa-sort-amount-desc"></i> SIGN UP</a>
+                </div>
+            </div>
+</section>
+
+
+
+<footer class="footer">
+      <div class="container">
+      
+   <!--   <p class="text-center" id="gitlist-copyright"> <strong>123490 Users </strong>Sign Up - SignUp Today <br> ©.2014-2015 cobyright by gitlist.io - Developet by <a href="https://twitter.com/LucasGatsas"> Lucas Gatsas </a> and 
+      <a href="https://twitter.com/LucasGatsas">  Giancarlo Soverini </a></p> -->
+
+            <ul class="footer-links-list-copyright">
+                <li> <p class="text-muted"> <code id="gitlist-counter-footer"><strong id="gitlist-counter-color-footer">123490 Users @ gitlist</strong> </code>  SignUp Today <br>  ©.2014-2015 cobyright by gitlist.io - Developet by <a href="https://twitter.com/LucasGatsas"> Lucas Gatsas </a> and 
+      <a href="https://twitter.com/LucasGatsas">  Giancarlo Soverini </p></li>
+
+            </ul>
+        <ul class="footer-links-list">
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Home</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> About</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Blog</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Terms</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Privacy</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Contact</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line-social-fotter"><i class="fa fa-github"></i></a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line-social-fotter"><i class="fa fa-twitter"></i></a></li>   <hr>
+        </ul>
+      </div>
+        <hr/>
+    </footer>

@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="/styles/loadingbar.css">
+
+ <div class="navbar navbar-fixed-top header">
+  <div class="col-md-12">
+        <div class="navbar-header">
+           <a class="navbar-brand" href="/"> 
+<i class="fa fa-sort-amount-desc" id="gitlist-logo"></i>
+           <!-- <img src="/images/white_icon_gitlist.png" style="height:46px;width:46px;margin-top: -6px;" class="" alt="avatar"> --></a>
+          <a class="navbar-brand-gitlist" href="#">Gitlist <!--<h13>v.0.0.1 </h13> --><br> <!--<h13>the best <strong> way </strong> to share <strong> Git.</strong> </h13> --></a>
+       <!--   <a href="#" class="navbar-brand">Bootstrap</a> -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+<i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse1">
+          <form class="navbar-form pull-left">
+              <div class="input-group" style="max-width:470px;">
+              <!--  <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"> 
+                <div class="input-group-btn">
+                  <button class="btn btn-default btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div> -->
+              </div>
+          </form>
+             <!--  <div class="navbar-brand navbar-brand-centered">
+                    <ul class="nav navbar-nav navbar-center">
+                    <p class="gitlist-search-option-top">Search your needed Git   <a href="#search"><i class="fa fa-search"></i> Search</a></p> 
+                </ul>
+               </div> -->
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="/g/add" id="submit-git-link">+Submit Git</a></li>
+              <li>
+              <!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></a> -->
+                 <ul class="dropdown-menu">
+                    <li><a  href="#"><i class="fa fa-cog" style="color:#dd1111;"></i> <span class="badge pull-right">40</span> Link </a></li>
+                    <li><a href="#"><i class="fa fa-cog" style="color:#dd1111;"></i> <span class="badge pull-right">2</span> Link </a></li>
+                    <li><a href="#"><i class="fa fa-cog" style="color:#dd1111;"></i> <span class="badge pull-right">0</span> Link </a></li>
+                    <li><a href="#"><i class="fa fa-cog" style="color:#dd1111;"></i> <span class="label label-info pull-right">1</span> Link </a></li>
+                    <li><a href="#"><i class="fa fa-cog" style="color:#dd1111;"></i> <span class="badge pull-right">13</span> Link </a></li>
+                </ul>
+              </li>
+              <li class="dropdown" id="gitlist-sigin-user-small-profile-image-top-menu">
+                <% if(username != "") { %>
+                    <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown" aria-expanded="false">
+                    <img id="userImage" src="<%- picture %>" style="width:30px;height:30px;" class="img-circle special-img"> <!-- <b class="caret"></b> --></a>
+                <% } %>
+                <!--  <ul class="dropdown-menu" id="gitlist-user-settings">
+                    <li><a href="/g/settings"><i class="fa fa-cog"></i> Account</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/g/usergits"><i class="fa fa-sign-out"></i> My List</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i> invite friends</a></li>
+                    <li><a href="/info/about"><i class="fa fa-sign-out"></i> About Us</a></li>
+                    <li><a href="/g/settings"><i class="fa fa-sign-out"></i> Settings</a></li>
+                    <li><a href="/logout"><i class="fa fa-sign-out"></i> Sign-out</a></li>
+                  </ul>  --> 
+              </li>
+              <li><a href="/" id="btnToggle"><i class="fa fa-list"></i></a></li>
+              <% if(username != "") { %>
+                <li><a id="user_profile" href="/<%- slug %>"><i class="fa fa-user"></i></a></li>
+                <li><a href="/logout" class="logout-btn btn btn-gitlist-sign-up-black-front" id="color-blue">Log Out</a></li>
+              <% } else { %>
+                  <li><a href="/g/login" class="login-btn btn btn-gitlist-sign-up-black-front" id="color-blue">Sign IN</a></li>
+              <% } %>
+          </ul>
+        </div>  
+     </div> 
+</div>
+<div class="navbar navbar-default" id="subnav">
+    <div class="col-md-12" id="gitlist-navbar">
+        <% if(username != "") { %>
+        <div class="navbar-header">          
+          <a href="#" style="margin-left:15px;" class="navbar-btn btn btn-default btn-plus dropdown-toggle" data-toggle="dropdown" id="gitlist-header-top"><i class="fa fa-home" style="color:#4285f4;"></i> Home <small><i class="fa fa-list"></i></small></a>
+          <ul class="nav dropdown-menu">
+              <li><a href="/<%- slug%>"><i class="fa fa-user-md" style="color:#1111dd;"></i> Profile</a></li>
+              <li><a href="/"><i class="fa fa-clipboard" style="color:#0000aa;"></i> Gitlist</a></li>
+              <li><a href="#"><i class="fa fa-inbox" style="color:#11dd11;"></i> Pages</a></li>
+              <li class="nav-divider"></li>
+              <li><a href="/g/settings"><i class="fa fa-cog" style="color:#dd1111;"></i> Settings</a></li>
+              <li><a href="/g/add"><i class="fa fa-plus"></i> Add Git</a></li>
+          </ul>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <% } %>
+        <div class="collapse navbar-collapse" id="navbar-collapse2">
+            <ul class="nav navbar-nav navbar"><!-- -right -->
+                <li class="active" id="trending"><a  href="/g/trending">Trending</a></li>
+                <li id="popular"><a href="/g/popular">Popular Gits</a></li>
+                <li id="staff"><a href="/g/staffgits">Staff Picks</a></li>
+                <li id="recent"><a href="/g/recent">Recent Gits</a></li>
+                <li id="most_vote"><a href="/g/mostvoted">Most Voted</a></li>
+             </ul>
+        </div>  
+     </div> 
+</div>
+<script type="text/javascript">
+    var href = window.location.href;
+    var params = href.split('/');
+    var pagename = params.pop();
+
+    switch(pagename) {
+        case 'trending':
+            $("#trending").addClass('active');
+            break;
+        case 'popular':
+            $("#popular").addClass('active');
+            break;
+        case 'staffgits':
+            $("#staff").addClass('active');
+            break;
+        case 'recent':
+            $("#recent").addClass('active');
+            break;
+        case 'mostvoted':
+            $("#most_vote").addClass('active');
+            break;
+        default:
+            break;            
+    } 
+</script>

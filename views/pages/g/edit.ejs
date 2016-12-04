@@ -1,0 +1,925 @@
+    <div class="navbar navbar-fixed-top header">
+  <div class="col-md-12">
+        <div class="navbar-header">
+           <a class="navbar-brand" href="#"> <img src="images/white_icon_gitlist.png" style="height:46px;width:46px;margin-top: -6px;" class="" alt="avatar"></a>
+          <a class="navbar-brand-gitlist" href="#">Gitlist.io <h13>v.0.0.1 </h13><br> <h13>the best <strong> way </strong> to share <strong> Git.</strong> </h13></a>
+       <!--   <a href="#" class="navbar-brand">Bootstrap</a> -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+          <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse1">
+          <form class="navbar-form pull-left">
+              <div class="input-group" style="max-width:470px;">
+              <!--  <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"> 
+                <div class="input-group-btn">
+                  <button class="btn btn-default btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div> -->
+              </div>
+          </form>
+               <div class="navbar-brand navbar-brand-centered">
+                    <ul class="nav navbar-nav navbar-center">
+                    <p class="gitlist-search-option-top">Search your needed Git   <a href="#search"><i class="fa fa-search"></i> Search</a></p> 
+                </ul>
+               </div>
+          <ul class="nav navbar-nav navbar-right">
+             <li><a href="http://www.gitlist.io" target="_ext">gitlist+</a></li>
+             <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></a>
+                 <ul class="dropdown-menu">
+                    <li><a href="#"><span class="badge pull-right">40</span>Link</a></li>
+                    <li><a href="#"><span class="badge pull-right">2</span>Link</a></li>
+                    <li><a href="#"><span class="badge pull-right">0</span>Link</a></li>
+                    <li><a href="#"><span class="label label-info pull-right">1</span>Link</a></li>
+                    <li><a href="#"><span class="badge pull-right">13</span>Link</a></li>
+                </ul>
+             </li>
+             <li><a href="#" id="btnToggle"><i class="fa fa-list"></i></a></li>
+             <li><a href="#"><i class="fa fa-user"></i></a></li>
+             <li><a href="../navbar-fixed-top/" class="btn btn-gitlist-sign-up-black-front" id="color-blue">Sign IN</a></li>
+          </ul>
+        </div>  
+     </div> 
+</div>
+<div class="navbar navbar-default" id="subnav">
+    <div class="col-md-12">
+        <div class="navbar-header">
+          
+          <a href="#" style="margin-left:15px;" class="navbar-btn btn btn-default btn-plus dropdown-toggle" data-toggle="dropdown" id="gitlist-header-top"><i class="fa fa-home" style="color:#4285f4;"></i> Home <small><i class="fa fa-list"></i></small></a>
+          <ul class="nav dropdown-menu">
+              <li><a href="#"><i class="fa fa-user-md" style="color:#1111dd;"></i> Profile</a></li>
+              <li><a href="#"><i class="fa fa-clipboard" style="color:#0000aa;"></i> Dashboard</a></li>
+              <li><a href="#"><i class="fa fa-inbox" style="color:#11dd11;"></i> Pages</a></li>
+              <li class="nav-divider"></li>
+              <li><a href="#"><i class="fa fa-cog" style="color:#dd1111;"></i> Settings</a></li>
+              <li><a href="#"><i class="fa fa-plus"></i> More..</a></li>
+          </ul>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse2">
+          <ul class="nav navbar-nav navbar"><!-- -right -->
+                <li class="active"><a  href="#">Trending</a></li>
+          <li><a href="#">Popular Gits</a></li>
+          <li><a href="#">Staff Picks</a></li>
+          <li><a href="#">Recent Gits</a></li>
+          <li><a href="#">Most Voted</a></li>
+           </ul>
+        </div>  
+     </div> 
+</div>
+
+
+
+
+
+
+
+
+<!--
+<div class="alert alert-warning alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+
+-->
+
+
+<!--
+
+
+ <section id="cta">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-wrapper">
+                                    <h4>Ready to start? Create your free account now</h4>
+                                    <form class="form-inline" role="form">
+                                        <div class="form-group">
+                                          <input id="Name gitlist-newsletter-form" name="Name" type="text"  class="form-control input-md" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                          <input id="Email gitlist-newsletter-form" name="Email" type="text"  class="form-control input-md" placeholder="Email">
+                                        </div>
+                                    <button  class="btn btn-primary btn-gitlist-newsltter-sign" onclick="postContactToGoogle()" type="button">Sign Up</button> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                -->
+
+ <section id="gitlist-top-abstand"></section>
+
+<!-- gitlist-sectionspace1 sign in up/in with Twitter and Gitlist oAuth -->
+        <section id="gitlist-sectionspace1-details1-join-gitlist-by-twitter" class="home">
+              <div class="gitlist-ss-tw-inner">
+                <h2 class="gitlist-front-h2">Daily dose of Unlimited Git Inspiration</h2>
+                  <h3 class="gitlist-front-h3">Get the best Git News and Codes for your Minds</h3><p>
+                   <a class="btn btn-primary social-login-btn social-github" href="/auth/github" id="front-btn-g"><i class="fa fa-github"></i> Join with Github</a>
+                  <a class="btn btn-primary social-login-btn social-twitter" href="/auth/twitter" id="front-btn-t"><i class="fa fa-twitter"></i> Join with Twitter</a></p>
+              </div>
+        </section>
+<!-- /gitlist-sectionspace1 --> 
+
+
+
+
+
+
+
+<!-- gitlist-sectionspace2 -->
+<section id="gitlist-sectionspace2-daily" class="pad-section">
+  <div class="container small" id="gitlist-container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Daily Gits</h3>
+      <div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">13</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/562741191653875712/93TyTG3x.png">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">How a web developer travels the world bartering his skills</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Switzerland</a>
+                <a href="#">#Git #oAuth</a>
+            </span>
+          </div>
+        </div>
+        <div class="right-options">
+            <div class="buttons dropdown">
+              <a class="comment-count loading" data-remote="true" href="#">
+              <i class="fa fa-comments"></i> <span>4</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">08</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/562741191653875712/93TyTG3x.png">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">How Set Up a Start Up in a Month with alot of Skills and Code. Work Remote and Local.</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Italy</a>
+                <a href="#">#Code #Github</a>
+            </span>
+          </div>
+        </div>
+        <div class="right-options">
+            <div class="buttons dropdown">
+              <a class="comment-count loading" data-remote="true" href="#">
+            <i class="fa fa-comments"></i> <span>4</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+<div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">08</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/535819426193346560/880Wc3PX_400x400.jpeg">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">We Runs Gitlist.io and Work Remote and Local.</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Italy</a>
+                <a href="#">#Code #Github</a>
+            </span>
+          </div>
+        </div>
+        <div class="right-options">
+            <div class="buttons dropdown">
+              <a class="comment-count loading" data-remote="true" href="#">
+             <i class="fa fa-comments"></i> <span>4</span></a>
+            </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Alerts and Add banners Here --> 
+<!-- /gitlist-sectionspace1 --> <!-- gitlist-sectionspace3 -->
+      <section id="gitlist-sectionspace-alerts" class="pad-section">
+              <div class="container alerts-adds">
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                  <div class="alert alert-error">  
+                  <a class="close" data-dismiss="alert" id="gitlist-banner-1">×</a>  
+                    Hey, developers! Check out this collection of fun and useful 
+                    <strong>Github</strong> products.     
+                    <button type="button" class="btn btn-primary btn-lg">View Collection</button>
+                    </div>  
+                    <!--<div class="alert alert-success">  
+                    <a class="close" data-dismiss="alert">×</a>  
+                    <strong>Success!</strong>You have successfully done it.  
+                    </div> --> <!--
+                    <div class="alert alert-info">  
+                    <a class="close" data-dismiss="alert">×</a>  
+                    <strong>Info!</strong>Watch this, but you may forget.  
+                    </div>   -->
+                    </div>
+                  </div>
+                </div>
+        </section>
+<!-- End Alerts and Add banners Here --> 
+<!-- End gitlist-sectionspace1 --> <!-- gitlist-sectionspace3 -->
+
+
+
+
+
+
+
+
+
+<!-- gitlist-sectionspace3 -->
+<section id="gitlist-sectionspace3-weekly" class="pad-section">
+  <div class="container small" id="gitlist-container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Weekly Gits</h3>
+      <div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">13</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/562741191653875712/93TyTG3x.png">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">How a web developer travels the world bartering his skills</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Switzerland</a>
+                <a href="#">#Git #oAuth</a>
+            </span>
+          </div>
+        </div>
+        <div class="right-options">
+            <div class="buttons dropdown">
+              <a class="comment-count loading" data-remote="true" href="#">
+              <i class="fa fa-comments"></i> <span>4</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">08</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/510538354606100484/MeeKLsxw_400x400.png">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">How Set Up a Start Up in a Month with alot of Skills and Code. Work Remote and Local.</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Italy</a>
+                <a href="#">#Code #Github</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="right-options">
+            <div class="buttons dropdown">
+            <a class="comment-count loading" data-remote="true" href="#">
+            <i class="fa fa-comments"></i> <span>4</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">08</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/562741191653875712/93TyTG3x.png">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">We Runs Gitlist.io and Work Remote and Local.</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Italy</a>
+                <a href="#">#Code #Github</a>
+            </span>
+          </div>
+        </div>
+        <div class="right-options">
+            <div class="buttons dropdown">
+              <a class="comment-count loading" data-remote="true" href="#">
+             <i class="fa fa-comments"></i> <span>4</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Alerts and Add banners Here --> 
+<!-- /gitlist-sectionspace1 --> <!-- gitlist-sectionspace3 -->
+      <section id="gitlist-sectionspace-alerts" class="pad-section">
+              <div class="container alerts-adds">
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                  <div class="alert alert-error">  
+                  <a class="close" data-dismiss="alert" id="gitlist-banner-1">×</a>  
+                    Hey, developers! Check out this collection of fun and useful 
+                    <strong>Github</strong> products.     
+                    <button type="button" class="btn btn-primary btn-lg">View Collection</button>
+                    </div>  
+                    <!--<div class="alert alert-success">  
+                    <a class="close" data-dismiss="alert">×</a>  
+                    <strong>Success!</strong>You have successfully done it.  
+                    </div> --> <!--
+                    <div class="alert alert-info">  
+                    <a class="close" data-dismiss="alert">×</a>  
+                    <strong>Info!</strong>Watch this, but you may forget.  
+                    </div>   -->
+                    </div>
+                  </div>
+                </div>
+        </section>
+<!-- End Alerts and Add banners Here --> 
+<!-- End gitlist-sectionspace1 --> <!-- gitlist-sectionspace3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- gitlist-sectionspace3 -->
+<section id="gitlist-sectionspace3-monthly" class="pad-section">
+  <div class="container small" id="gitlist-container">
+    <div class="row">
+      <div class="col-sm-12">
+          <h3>Monthly Gits</h3>
+            <div class="gitlist-media " data-liststory="liststory_" id="">
+              <div class="gitlist-center">
+              <div class="gitlist-vote">
+              <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">13</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/562741191653875712/93TyTG3x.png">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">How a web developer travels the world bartering his skills</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Switzerland</a>
+                <a href="#">#Git #oAuth</a>
+            </span>
+          </div>
+        </div>
+        <div class="right-options">
+            <div class="buttons dropdown">
+              <a class="comment-count loading" data-remote="true" href="#">
+              <i class="fa fa-comments"></i> <span>4</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">08</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/510538354606100484/MeeKLsxw_400x400.png">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">How Set Up a Start Up in a Month with alot of Skills and Code. Work Remote and Local.</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Italy</a>
+                <a href="#">#Code #Github</a>
+            </span>
+          </div>
+        </div>
+        <div class="right-options">
+            <div class="buttons dropdown">
+            <a class="comment-count loading" data-remote="true" href="#">
+            <i class="fa fa-comments"></i> <span>4</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="gitlist-media " data-liststory="liststory_" id="">
+      <div class="gitlist-center">
+        <div class="gitlist-vote">
+            <div class="gitlistvote_buttons ">
+              <a href="/signin">
+                <i class="fa fa-sort-asc"></i>
+                    <em class="votes vote_count">08</em>
+                  </a>
+              </div>
+        </div>
+        <div class="gitlist-image">
+          <a class="" href="#" target="_blank">
+              <img alt="images-profile" src="https://pbs.twimg.com/profile_images/535819426193346560/880Wc3PX_400x400.jpeg">
+            </a>        
+        </div>
+        <div class="gitlistmedia-body">
+              <h4 class="gitlistmedia-heading">
+                  <a class="git-title" href="#" target="_blank">We Runs Gitlist.io and Work Remote and Local.</a>
+                  <a class="lang" data-toggle="tooltip" href="#" title="" data-original-title="Language">en</a>
+                  <a class="gitdomain" href="#">gitlist.io</a>
+              </h4>
+          <div class="sub-detail">
+                <span class="timestamp">6 days ago by </span><span class="verify_badge" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Verified Traveler"><i class="icon-ok-sign"></i></span> <a class="owner" href="#">Lara Devel</a>
+            <span class="tags">
+                <a href="#">#Italy</a>
+                <a href="#">#Code #Github</a>
+            </span>
+          </div>
+        </div>
+        <div class="right-options">
+            <div class="buttons dropdown">
+             <a class="comment-count loading" data-remote="true" href="#">
+             <i class="fa fa-comments"></i> <span>4</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Alerts and Add banners Here --> 
+<!-- /gitlist-sectionspace1 --> <!-- gitlist-sectionspace3 -->
+      <section id="gitlist-sectionspace-alerts" class="pad-section">
+              <div class="container alerts-adds">
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                  <div class="alert alert-error">  
+                  <a class="close" data-dismiss="alert" id="gitlist-banner-1">×</a>  
+                    Hey, developers! Check out this collection of fun and useful 
+                    <strong>Github</strong> products.     
+                    <button type="button" class="btn btn-primary btn-lg">View Collection</button>
+                    </div>  
+                    <!--<div class="alert alert-success">  
+                    <a class="close" data-dismiss="alert">×</a>  
+                    <strong>Success!</strong>You have successfully done it.  
+                    </div> --> <!--
+                    <div class="alert alert-info">  
+                    <a class="close" data-dismiss="alert">×</a>  
+                    <strong>Info!</strong>Watch this, but you may forget.  
+                    </div>   -->
+                    </div>
+                  </div>
+                </div>
+        </section>
+<!-- End Alerts and Add banners Here --> 
+<!-- End gitlist-sectionspace1 --> <!-- gitlist-sectionspace3 -->
+
+
+
+
+
+
+
+<!-- /gitlist-sectionspace-rest-part-1 --> 
+<section id="gitlist-sectionspace-rest-part-1">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2>Start your Free Gitlist Today!
+                    </h2><br>
+                    <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target="#largeModal"> <i class="fa fa-sort-amount-desc"></i> SIGN UP</a>
+                </div>
+            </div>
+</section>
+
+
+
+<!--
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-bottom is-fixed bottom-nav-collapse is-visible">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" id="blog-title-left-top">g</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/"><i class="fa fa-facebook"></i></a>
+                </li>
+                
+                <li>
+                    <a href="/about/"><i class="fa fa-twitter"></i></a>
+                </li>
+                
+                <li>
+                    <a href="/archive/">Archive</a>
+                </li>
+                
+                <li>
+                    <a href="/contact/">Contact Me</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+-->
+
+
+<!-- gitlist-sectionspace1 gitlistusers voteup -->
+<section id="gitlist-sectionspace1" class="home">
+<div class="container gitlistusers-voteup">
+
+<div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Gitlist Users</h2>
+            </div>
+            <div class="gitlist-userlist-front">
+            <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+            <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+            <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+            <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+            <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+            <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+               <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+               <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+               <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+               <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+               <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+                     <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+                     <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>         <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+            <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+            <li>
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/40x40" alt="">
+                
+                
+            </li>
+        </div>
+ </div>
+ </div>
+</section>
+
+
+<div id="search">
+    <button type="button" class="close">&times;</button>
+    <form>
+        <input type="search" value="" placeholder="Search your Git" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
+
+
+<footer class="footer">
+      <div class="container">
+      
+   <!--   <p class="text-center" id="gitlist-copyright"> <strong>123490 Users </strong>Sign Up - SignUp Today <br> ©.2014-2015 cobyright by gitlist.io - Developet by <a href="https://twitter.com/LucasGatsas"> Lucas Gatsas </a> and 
+      <a href="https://twitter.com/LucasGatsas">  Giancarlo Soverini </a></p> -->
+
+            <ul class="footer-links-list-copyright">
+                <li> <p class="text-muted"> <code id="gitlist-counter-footer"><strong id="gitlist-counter-color-footer">123490 Users @ gitlist</strong> </code>  SignUp Today <br>  ©.2014-2015 cobyright by gitlist.io - Developet by <a href="https://twitter.com/LucasGatsas"> Lucas Gatsas </a> and 
+      <a href="https://twitter.com/LucasGatsas">  Giancarlo Soverini </p></li>
+
+            </ul>
+        <ul class="footer-links-list">
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Home</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> About</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Blog</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Terms</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Privacy</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line"> Contact</a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line-social-fotter"><i class="fa fa-github"></i></a></li>
+                <li> <a href="https://twitter.com/LucasGatsas" id="footer-gl-line-social-fotter"><i class="fa fa-twitter"></i></a></li>   <hr>
+        </ul>
+      </div>
+        <hr/>
+    </footer>
+
+    

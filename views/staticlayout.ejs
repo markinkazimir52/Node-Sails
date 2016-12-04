@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+       <!-- Gitlist founded by 
+
+       Lucas Gatsas ==> https://twitter.com/LucasGatsas 
+
+         2014 - 2015. Copyright by Gitlist. 2015 -->
+         
+    <!-- Gitlist is OpenSource Sharing Network Plattform for Developers --> 
+    
+    <meta charset="utf-8" >
+    <title>Gitlist</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <meta http-equiv="imagetoolbar" content="no" >
+    <meta name="revisit-after" content="15 days" >
+<link rel="shortcut icon" href="http://gitlist.github.io/assets/images/favicon.ico">
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+    <!--  
+        Stylesheets and Preprocessors
+        ==============================
+
+        You can always bring in CSS files manually with `<link>` tags, or asynchronously
+        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage 
+        of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+        By default, stylesheets from your `assets/styles` folder are included
+        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+        are supported. In production, your styles will be minified and concatenated into
+        a single file.
+        
+        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+            
+            + Change the order of your CSS files
+            + Import stylesheets from other directories
+            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+    -->
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/1-bootstrap.min.css-gitlist-6347216-main.css">
+    <link rel="stylesheet" href="/styles/2-style-gitlist-front.css">
+    <link rel="stylesheet" href="/styles/3-importer.css">
+    <link rel="stylesheet" href="/styles/4-loadingbar.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/5-font-awesome.min.css">
+
+    <script data-main="js/main" src="/js/libs/require/require.min.js"></script>
+    <script src="/js/libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="/js/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/notify.js"></script>
+    <script src="/js/jquery.loadingbar.js"></script>
+
+  </head>
+
+  <body>
+    <%- body %>
+<!--  <script src="/js/libs/jquery/jquery-1.11.2.min.js"></script>
+  <script src="/js/libs/bootstrap/bootstrap.min.js"></script>
+-->  
+  <script src="/js/external/useraccess.js"></script>  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53988504-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68855948-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<script src="/js/notify.js"></script>
+
+<style>
+  #preloader {position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff; /* change if the mask should have another color then white */z-index:99; /* makes sure it stays on top */}#status {width:200px;height:200px;position:absolute;left:50%; /* centers the loading animation horizontally one the screen */top:50%; /* centers the loading animation vertically one the screen */background-image:url(); /* path to your loading animation */background-repeat:no-repeat;background-position:center;margin:-100px 0 0 -100px; /* is width and height divided by two */}ul, ol {margin-top: 0;margin-bottom: 10px;list-style: none;}.navbar-inverse {background-color: #FFF;border-color: #FFFFFF;}</style><!-- <link rel="stylesheet" href="{{ "/css/prettify.css" | prepend: site.baseurl }}">--> <style>header.intro-header {background: #6f5499;background: no-repeat center center;background-attachment: scroll;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;}/* Preloader */#preloader {position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff; /* change if the mask should have another color then white */z-index:99; /* makes sure it stays on top */}#status {width:200px;height:200px;position:absolute;left:50%; /* centers the loading animation horizontally one the screen */top:50%; /* centers the loading animation vertically one the screen */background-image:; /* path to your loading animation */background-repeat:no-repeat;background-position:center;margin:-100px 0 0 -100px; /* is width and height divided by two */} li {
+  list-style: none;}li{list-style: none;}body.modal-open{overflow: hidden;padding-right: 0px;}
+</style> 
+
+<div id="preloader"> 
+      <div id="status"> &nbsp;</div> 
+</div>
+<div class="navbar navbar-fixed-top header" id="gitlist-col-top">
+  <div class="col-md-12">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"> 
+        <i class="fa fa-sort-amount-desc" id="gitlist-logo"></i>
+        <!--<img src="../images/white_icon_gitlist.png" style="height:46px;width:46px;margin-top: -6px;" class="" alt="avatar"> --> </a>
+      <a class="navbar-brand-gitlist" href="#">Gitlist <!--<h13>v.0.0.1 </h13><br> <h13>the best <strong id="gitlist-sign-up-stylesheet"> way </strong> to share <strong id="gitlist-sign-up-stylesheet"> Git.</strong> </h13> --> </a>
+      <!--   <a href="#" class="navbar-brand">Bootstrap</a> -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1" >
+<i class="fa fa-bars"></i>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse1 gitlist-col-top" style="background:none;">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/" class="btn btn-gitlist"><i class="fa fa-arrow-circle-o-left"></i> Back to Gitlist</a></li>
+        <li><a href="/g/login"  id="color-blue" class="btn btn-gitlist-sign-up">Log in</a></li>
+      </ul>
+    </div>  
+  </div> 
+</div>
+<div class="site-wrapper">
+  <div class="site-wrapper-inner-signup-gitlist">
+    <div class="cover-container">
+      <div class="inner cover">
+        <h2 class="form-signin-heading">Sign Up</h2>
+	      <div class="col-md-4 col-lg-12 center-block"></div>   
+        
+        <div id="signup-form" class="form-signin">
+        <!--  <a class="btn btn-primary social-login-btn social-github center-block" href="/auth/github"><i class="fa fa-github"></i></a>
+          <a class="btn btn-primary social-login-btn social-twitter center-block" href="/auth/twitter"><i class="fa fa-twitter"></i></a> --> 
+          <br>
+          <small class="text-muted">Already a Member? SignIn to <a href="/g/login" id="underline">Gitlist</a></small>
+          <br><br>
+          <input type="text" name="username" id="signupName" class="form-control login-input" placeholder="Username" required="" autofocus="">
+          <br>
+          <input type="email" name="email" id="signupEmail" class="form-control login-input" placeholder="E-mail">
+          <br>
+          <input name="password" type="password" id="signupPwd" class="form-control login-input" placeholder="Password">
+          <br>
+          <input name="passwordConfirmation" id="signupConfirmPwd" class="form-control login-input-pass" placeholder="Confirm Password" type="password">
+          <br>
+          <input id="fakeinput" type="text" name="fakeinput" value="" class="hidden">  
+          <label class="checkbox">
+            <input id="terms" name="terms" type="checkbox" value="1" checked> I agree with the terms of service.
+          </label>
+          <button class="signupBtn btn btn-lg btn-primary btn-block"  id="color-blue"><i class="fa fa-check-circle-o"></i> Create Account</button>
+        </div>
+      </div>
+      <div class="inner">
+        <%- partial ('../partials/copyright.ejs') %>  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  //<![CDATA[
+    $(window).load(function() { 
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(15).fadeOut('fast'); // will fade out the white DIV that covers the website.
+      $('body').delay(15).css({'overflow':'visible'});
+    })
+  //]]>
+
+  $.notify.addStyle('confirm', {
+    html: "<div><span data-notify-text/><span>&nbsp;&nbsp;Please click <a href='/g/login'>here</a> to login!</span></div>",
+  });
+
+  // Enter key press
+  $("#signupConfirmPwd").keyup(function(e){
+      if(e.which == 13){
+          var email = $("#signupEmail").val();
+          var username = $("#signupName").val();
+          var password = $("#signupPwd").val();
+          var confirmPassword = $("#signupConfirmPwd").val();
+          var fakeinput = $("#fakeinput").val();
+          var terms = $("#terms").val();
+          if (email && username && password) {
+              if (password === confirmPassword) {
+                  $.post(
+                      '/g/signup',
+                      {email: email, username: username, password:password, passwordConfirmation:confirmPassword, fakeinput: fakeinput, terms: terms},
+                      function () {                
+                          $.notify(username + " has created an account successfully!", {style: 'confirm', className: "success", autoHide: false, clickToHide: false});
+                      }
+                  ).fail(function(res){
+                      $.notify("Error!", "error");
+                  });
+              } else {
+                  $.notify("Passwords don't match", "error");
+              }   
+          } else {
+              $.notify("A username and password is required!", "error");
+          }
+      }
+  });
+
+  // Signup button click
+  $(".signupBtn").click(function(){
+    var email = $("#signupEmail").val();
+    var username = $("#signupName").val();
+    var password = $("#signupPwd").val();
+    var confirmPassword = $("#signupConfirmPwd").val();
+    var fakeinput = $("#fakeinput").val();
+    var terms = $("#terms").val();
+    if (email && username && password) {
+        if (password === confirmPassword) {
+            $.post(
+                '/g/signup',
+                {email: email, username: username, password:password, passwordConfirmation:confirmPassword, fakeinput: fakeinput, terms: terms},
+                function () {                
+                    $.notify(username + " has created an account successfully!", {style: 'confirm', className: "success", autoHide: false, clickToHide: false});
+                }
+            ).fail(function(res){
+                $.notify("Error!", "error");
+            });
+        } else {
+            $.notify("Passwords don't match", "error");
+        }   
+    } else {
+        $.notify("A username and password is required!", "error");
+    }
+  });  
+</script>
+<style>
+    .notifyjs-confirm-base {
+        font-weight: bold;
+        padding: 8px 15px 8px 14px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        border-radius: 4px;
+        white-space: nowrap;
+        padding-left: 25px;
+        background-repeat: no-repeat;
+        background-position: 3px 7px;
+    }
+    .notifyjs-confirm-success {
+        color: #468847;
+        background-color: #DFF0D8;
+        border-color: #D6E9C6;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+    }
+</style>

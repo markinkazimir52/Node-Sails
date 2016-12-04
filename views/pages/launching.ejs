@@ -1,0 +1,866 @@
+<style>
+    /* ADDING HERE THE LANDING PAGES DETAILS
+    CSSCode writen by Lucas Gatsas 
+    https://www.twitter.com/lucasgatsas;
+    Theme: gitlist landing
+    Author: Lucas Gatsas
+    Link: https://www.gitlist.io/g/launching
+    Web: space.lucasgatsas.ch
+    ; */
+    /* Titles */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Open Sans";
+        font-weight: 300;
+        color: #333;
+    }
+    /* Paragraph & Typographic */
+    p {
+        line-height: 28px;
+        margin-bottom: 25px;
+        font-weight: 400;
+    }
+    .centered {
+        text-align: center;
+    }
+    /* Links */
+    a {
+        color: #4183c4;
+        word-wrap: break-word;
+
+        -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+        transition: color 0.1s ease-in, background 0.1s ease-in;
+    }
+    a:hover,
+    a:focus {
+        color: #589DBB;
+        text-decoration: none;
+        outline: 0;
+    }
+    a:before,
+    a:after {
+        -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+        -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+        transition: color 0.1s ease-in, background 0.1s ease-in;
+    }
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 0px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+    .btn-success {
+        color: #ffffff;
+        background-color: #4183c4;
+        border-color: #4183c4;
+        border-radius:90px;
+    }
+    /* ==========================================================================
+       Wrap Sections
+       ========================================================================== */
+
+       b, strong {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.82);
+}
+    #gitlist-headerwrap {
+        background-color:#fff;
+        padding-top: 60px;
+            background-color: #fff;
+    padding-top: 60px;
+    /* background-image: url(http://aws.producthunt.com/notice/22/banner_github-notice2.jpg); */
+    color: white;
+    background-image: url(http://aws.producthunt.com/notice/22/banner_github-notice2.jpg);
+    color: white;
+    background-image: -webkit-linear-gradient(110deg, rgb(66, 127, 237) 10%, rgb(66, 127, 237) 90%), url("../images/background/diamond_upholstery.png");
+    background-image: -moz-linear-gradient(110deg, rgb(66, 127, 237) 10%,rgb(66, 127, 237) 90%), url("../images/background/diamond_upholstery.png");
+    background-image: -o-linear-gradient(110deg, rgb(66, 127, 237) 10%, rgb(66, 127, 237)90%), url("../images/background/diamond_upholstery.png");
+    background-image: linear-gradient(110deg, rgb(66, 127, 237) 10%, rgb(66, 127, 237) 90%), url("../images/background/diamond_upholstery.png");
+    background-image: -ms-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#31c8b1, endColorstr=#4ec7ff, GradientType=1);
+    background-blend-mode: multiply;
+    color: #fff;
+    }
+    #gitlist-headerwrap h1 {
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.48);
+        font-size: 70px;
+        line-height: 80px;
+        font-family: open sans;
+        letter-spacing: -4px;
+        font-weight: 100;
+    }
+    #gitlist-headerwrap h3 {
+        color: #E2E2E2;
+        font-size: 30px;
+    }
+    #gitlist-headerwrap h5 {
+        color: white;
+        font-weight: 700;
+        text-align: left;
+        font-size: 15px;
+        line-height: 0.9;
+    }
+    #gitlist-headerwrap p {
+        text-align: left;
+        color:rgb(206, 206, 206);
+        font-weight:400;
+    }
+    /* intro Wrap */
+    #gitlist-intro {
+        padding-top: 50px;
+        border-top: #fff solid 5px;
+    }
+    #gitlist-features {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background:white;
+    }
+    #gitlist-features .ac a{
+        font-size: 20px;
+    }
+    /* Showcase Wrap */
+    #showcase {
+        display: block;
+        background-color: #fff;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #showcase h1 {
+        color: rgb(181, 181, 181);
+    }
+    #gitlist-footerwrap {
+        background-color: #fff;
+        color: gray;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        text-align: left;
+    }
+    #gitlist-footerwrap h3 {
+        font-size: 28px;
+        color: gray;
+    }
+    #gitlist-footerwrap p {
+        color: gray;
+        font-size: 18px;
+    }
+
+    /* Copyright Wrap */
+    #gitlist-c {
+        background-color: #fff; padding-top: 15px;text-align: right;
+    }
+    #gitlist-c p {
+        color: gray;
+        text-align: center;
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: -1px;
+    }
+    /*Navbar default color background for the landing page */
+    .navbar-default {
+        background:white;
+        color:gray;
+        border-bottom: 0px solid white;
+    }
+    /* ENd Navbar default color background for the landing page */
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+        background:white;
+    }
+    img.img-responsive.img-circle {
+        width: 164px;
+        height: 164px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        border-radius: 50px;
+        /* width: 100px; */
+        /* margin-top: -60px; */
+        /* margin-bottom: 20px; */
+        /* display: inline-block; */
+        /* width: 120px; */
+        /* height: 120px; */
+        background-color: #fff;
+        border: 3px solid #fff;
+        z-index: 0;
+        /* position: relative; */
+        border-radius: 100%;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+    h2.title.text-center {
+        color: #4183c4;
+    }
+    .navbar-collapse.collapse1 {
+        text-align: right;
+        background: white;
+    }.navbar-brand-gitlist {
+    float: left;
+    height: 50px;
+    padding: 25px 0px;
+    font-size: 27px;
+    line-height: 11px;
+    letter-spacing: -1px;
+    color: rgb(66, 127, 237);
+    font-weight: 800;
+    font-family: Open Sans;
+}i#gitlist-logo {
+    color: rgb(66, 127, 237);
+}
+
+
+/*
+.container.alerts-adds1 {
+    max-width: 880px;
+}*/
+
+
+/* Alert for top */
+/*landing page */ 
+
+
+@media (min-width: 1200px)
+.container1 {
+    width: 100%;
+}
+}
+
+.container1.alerts-adds1 {
+    width: 100%;
+}
+
+.alert.alert-error1 {
+    color: white;
+    background-image: url();
+    color: white;
+    background-image: -webkit-linear-gradient(110deg, rgb(66, 127, 237) 10%, rgb(66, 127, 237) 90%), url("../images/background/diamond_upholstery.png");
+    background-image: -moz-linear-gradient(110deg, rgb(66, 127, 237) 10%,rgb(66, 127, 237) 90%), url("../images/background/diamond_upholstery.png");
+    background-image: -o-linear-gradient(110deg, rgb(66, 127, 237) 10%, rgb(66, 127, 237)90%), url("../images/background/diamond_upholstery.png");
+    background-image: linear-gradient(110deg, rgb(66, 127, 237) 10%, rgb(66, 127, 237) 90%), url("../images/background/diamond_upholstery.png");
+    background-image: -ms-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#31c8b1, endColorstr=#4ec7ff, GradientType=1);
+    background-blend-mode: multiply;
+    color: #fff;
+     border-radius: 0px;
+}
+.alert1 {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+
+.navbar-default1 {
+    /* background: white; */
+    /* color: gray; */
+    border-bottom: 0px solid white;
+    background: url(../images/header.png) 0 0 repeat-x;
+    height: 60px;
+        margin-top: 0px;
+}
+@media (min-width: 768px)
+.navbar>.container .navbar-brand1, .navbar>.container-fluid .navbar-brand1 {
+    margin-left: -15px;
+}
+.navbar-brand1 {
+
+}
+a#color-blue1 {
+    color: rgb(66, 127, 237);
+    /* background-color: rgb(66, 127, 237); */
+    border-color: rgb(255, 255, 255);
+    letter-spacing: 0px;
+    font-weight: 800;
+    /* margin-top: 16px; */
+    /* margin-top: 16px; */
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+    /* color: #333; */
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+    background-image: linear-gradient(#fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+        margin-top: 7px;
+}
+a.btn.btn-gitlist-sign-up-black-front1 {
+    padding: 8px 18px;
+    color: white;
+    /* font-size: 12px; */
+    letter-spacing: 2px;
+    /* font-weight: bold; */
+    border: 1px solid rgba(0, 0, 0, 0.42);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+i#gitlist-logo1 {
+    color: rgb(66, 127, 237);
+}
+i#gitlist-logo1 {
+border: 1px solid rgba(65, 131, 196, 0.5);
+    padding: 14px;
+    border-radius: 90px;
+    margin-top: 4px;
+    font-size: 20px;
+        margin-left: 20px;
+}
+.container.text-center {
+    margin-top: 0px; 
+}
+h2.featurette-heading.centered {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.0;
+    color: inherit;
+}
+</style>  
+
+<body data-spy="scroll">
+    <!-- [ Preloader and Status ] -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Fixed navbar -->
+    <div id="navigation" class="navbar navbar-default1 navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                         <a class="navbar-brand1" href="/"> 
+<i class="fa fa-sort-amount-desc" id="gitlist-logo1"></i>
+           <!-- <img src="/images/white_icon_gitlist.png" style="height:46px;width:46px;margin-top: -6px;" class="" alt="avatar"> --></a>
+        <!--  <a class="navbar-brand-gitlist" href="#">Gitlist.io <h13>v.0.0.1 </h13><br> --> <!--<h13>the best <strong> way </strong> to share <strong> Git.</strong> </h13> --> <!--</a>     -->  
+            </div>
+            <div class="navbar-collapse collapse1" style="text-align: right; background: none;">
+                <ul class="nav navbar-nav">
+                <!--    <li class="active"><a href="#home" class="smothscroll">Home</a></li>
+                    <li><a href="#desc" class="smothscroll">Description</a></li>
+                    <li><a href="../g/login" class="btn btn-gitlist-sign-up">Login</a></li> --> 
+                    <li><a href="../g/login" class="btn btn-gitlist-sign-up-black-front1" id="color-blue1">Sign IN</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+    <section id="home" name="home"></section>
+    <section id="gitlist-headerwrap">
+        <div class="container">
+            <div class="row centered">
+                <div class="[ col-lg-12 ]">
+                    <h1>welcome to <b> gitlist</b></h1>
+                    <h3>Get Best Gits and Repos around The Globe</h3>
+                    <br><br><br>
+                </div>                
+                <div class="[ col-lg-2 ]">
+                    <h5>Amazing List</h5>
+                    <p>List your Awesome Open Source, Code, Git and Respos today for Free and Share it with other Developers.</p>
+                    <img class="hidden-xs hidden-sm hidden-md" src="../images/arrow1.png">
+                </div>
+                <div class="[ col-lg-8 ]">
+                    <img class="img-responsive" src="../images/macbook.png" alt="">
+                </div>
+                <div class="[ col-lg-2 ]">
+                    <br>
+                    <img class="hidden-xs hidden-sm hidden-md" src="../images/arrow2.png">
+                    <h5>Awesome Developers</h5>
+                    <p>Meet Awesome Developers and IT People. Get in Contact with Awesome Developers. - industry.</p>
+                </div>
+            </div>
+        </div> <!--/ .container -->
+    </section><!--/ #headerwrap -->
+    <section id="desc" name="desc"></section>
+ 
+
+<section id="gitlist-sectionspace-alerts" class="gtilist -462365328465">
+     <div class="container1 alerts-adds1">
+                <div class="gtilist-4zoqrw8zfo8wzqnewgerzg">
+                  <div class="col-lg-13 text-center">
+                  <div class="alert alert-error1">  
+                  <a class="close" data-dismiss="alert1" id="gitlist-banner-1">×</a>  
+                     Hey, Developers! Check out the New Start Up 
+                    <strong>Gitlist </strong> and share your Gits Today.    
+                    <button type="button" class="btn btn-primary btn-lg">Sign Up.</button>
+                    </div> 
+              </div>
+         </div>
+     </div>  
+</section> 
+
+
+    
+    <!-- Gitlist Features -->
+    <section id="gitlist-features">
+        <div class="container">
+            <div class="row">
+                  <h2 class="featurette-heading centered">What's<span class="text-muted"> New?</span></h2>
+                 <!-- <h2 class="featurette-heading centered"><br><span class="text-muted"> New?</span></h2> --> 
+                <br><br>
+                <div class="col-lg-6 centered">
+                  <img class="centered" src="../images/IPhone6_silver_frontface.png" alt="" style="height:600px;">
+                </div>              
+                <div class="col-lg-6">
+                    <h3>Gitlist App Features</h3>
+                    <br>
+                    <div class="accordion ac" id="accordion2">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle">
+                                    Newest Gits arround the Globe.
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body collapse in">
+                                <div class="accordion-inner">
+                                    <p>Clean Gitlist and Respos Update Daily, Weekly, Monthly </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>            
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle">
+                                    Responsive Design
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse in">
+                                <div class="accordion-inner">
+                                    <p>Built to Responsive and Mobile First. See your Gitlist in Responsive Design.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>            
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle">
+                                    Awesome Social Network
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="accordion-body collapse in">
+                                <div class="accordion-inner">
+                                    <p>Get Connections with other Developers and make Connections.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>                            
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle">
+                                    Share, Safe and Connections.
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="accordion-body collapse in">
+                                <div class="accordion-inner">
+                                    <p>Sign Up for Free and Share your Work Online.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END  Gitlist Features -->
+
+
+
+
+
+    <div class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Get Connections<br>to your Gits</h2>
+                        <p class="lead">Take a Tour to our List and see the Newest Gits.
+                         <a target="_blank" href="http://gitlist.io">See how it Works</a>.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="../images/figure-4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+
+
+
+
+
+    <section id="sep1">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="mb">gitlist.io is Open Source Project</h1>
+                    <h3 class="mb">Made in Switerland for the IT and Web - Industry.</h3>
+                    <button class="btn btn-conf btn-clear"><a href="mailto:lucasgatsas@gmail.com" style="color:white;">Request for Information</a></button>
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+    </section>
+
+
+    <section class="featurette" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1"> <br><br><br>              
+                    <h2 class="featurette-heading centered">How Gitlist Works?<br>
+                        <span class="text-muted">Is Pretty Cool.</span>
+                    </h2>
+                    <p class="lead centered">Submit your Favorite Gits to our List.</p>
+                </div>
+            </div><!--/row-->
+        </div>
+    </section>
+
+
+
+
+    <!-- Introduction gitlist.io  --> 
+    <section style="background:#fff;">
+        <div class="container">
+            <div class="row">
+                <div class="board">
+                    <div class="board-inner">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <div class="liner"></div>
+                            <li class="active">
+                                <a href="#home" data-toggle="tab" title="Welcome"><span class="round-tabs one"><i class="fa fa-home"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#profile" data-toggle="tab" title="Profile"><span class="round-tabs two"><i class="fa fa-user" id="giv-ano"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#messages" data-toggle="tab" title="Git"><span class="round-tabs three"><i class="fa fa-file-code-o"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#settings" data-toggle="tab" title="Community"><span class="round-tabs four"><i class="fa fa-comments"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#doner" data-toggle="tab" title="Completed"><span class="round-tabs five"><i class="fa fa-check-circle"></i></span></a>
+                            </li>                         
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+                            <h3 class="head text-center">Welcome to Gitlist<sup>™</sup> <span style="color:#f48260;">♥</span></h3>
+                            <p class="narrow text-center">
+                               
+                            </p>                            
+                            <p class="text-center">
+                                <a href="../g/login" class="btn btn-success btn-outline-rounded green"> start using gitlist<i class="fa fa-paper-plane" style="margin-left:10px;"></i></a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <h3 class="head text-center">Create a Gitlist Profile</h3>
+                            <p class="narrow text-center">
+                              And add your Favorite from Github or any Git and List it.
+                            </p>                            
+                            <p class="text-center">
+                                <a href="../g/login" class="btn btn-success btn-outline-rounded green"> start using gitlist<i class="fa fa-paper-plane" style="margin-left:10px;"></i></a>
+                            </p>                            
+                        </div>
+                        <div class="tab-pane fade" id="messages">
+                            <h3 class="head text-center">Community</h3>
+                            <p class="narrow text-center">
+                                Get Connections and Community to other Developers World Wide.
+                            </p>                            
+                            <p class="text-center">
+                                <a href="../g/login" class="btn btn-success btn-outline-rounded green"> start using gitlist<i class="fa fa-paper-plane" style="margin-left:10px;"></i></a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="settings">
+                            <h3 class="head text-center">Drop comments!</h3>
+                            <p class="narrow text-center">
+                                And Give Some Feedbacks.
+                            </p>                          
+                            <p class="text-center">
+                                <a href="../g/login" class="btn btn-success btn-outline-rounded green"> start using gitlist <i class="fa fa-paper-plane" style="margin-left:10px;"></i></a>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="doner">
+                            <div class="text-center">
+                                <i class="img-intro icon-checkmark-circle"></i>
+                            </div>
+                            <h3 class="head text-center">Thanks for Submit <span style="color:#f48260;">♥</span> @ Gitlist</h3>
+                            <p class="narrow text-center">
+                                Stay Tuned Gitlist Version 2 is Comming soon and Gitlist PRO! 
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Introduction gitlist.io  --> 
+
+ <!--   <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
+                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="../images/space_001.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+ 
+                   
+    <div class="[ container text-center ]">
+        <div class="[ row ]">
+        <!--    <div class="[ col-xs-12 ]" style="padding-bottom: 30px;">
+                <p>Why using Gitlist? <a target="_blank" href="http://www.gitlist.io">@LucasGatsas</a> Gitlist, yes, let me Show all nice Gits everyday. <a target="_parent" href="http://gitlist.io">here</a></p>
+            </div> --> 
+        </div>
+    </div>
+    <div class="[ container text-center ]" id="gitlist-launching-page-seetings-1">
+        <div class="[ row ]">
+            <div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
+                <div class="[ col-xs-4 col-sm-12 ]">
+                    <!-- Nav tabs -->
+                    <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
+                        <li role="gitlist-landing-com" class="active" id="active">
+                            <a href="#Lucas" aria-controls="Lucas" role="tab" data-toggle="tab">
+                                <img class="img-circle" src="https://pbs.twimg.com/profile_images/598639420363923456/zLAW5YPs.jpg" style="width: 110px;"/>
+                                <span class="quote"><i class="fa fa-shield"></i></i></span>
+                            </a>
+                        </li>
+                        <li role="gitlist-landing-com" class="">
+                            <a href="#daksh" aria-controls="daksh" role="tab" data-toggle="tab">
+                                <img class="img-circle" src="https://pbs.twimg.com/profile_images/535819426193346560/880Wc3PX_400x400.jpeg" style="width: 110px;"/>
+                                <span class="quote"><i class="fa fa-shield"></i></span>
+                            </a>
+                        </li>
+                        <li role="gitlist-landing-com" class="">
+                            <a href="#anna" aria-controls="anna" role="tab" data-toggle="tab">
+                                <img class="img-circle" src="https://pbs.twimg.com/profile_images/509425446409105408/jIuj-RxO.jpeg" style="width: 110px;"/>
+                                <span class="quote"><i class="fa fa-shield"></i></span>
+                            </a>
+                        </li>
+                        <li role="gitlist-landing-com" class="">
+                            <a href="#wafer" aria-controls="wafer" role="tab" data-toggle="tab">
+                                <img class="img-circle" src="https://pbs.twimg.com/profile_images/510538354606100484/MeeKLsxw.png" style="width: 110px;"/>
+                                <span class="quote"><i class="fa fa-shield"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="[ col-xs-8 col-sm-12 ]">
+                    <!-- Tab panes -->
+                    <div class="tab-content" id="tabs-collapse">            
+                        <div role="tabpanel" class="tab-pane fade in active" id="Lucas">
+                            <div class="tab-inner">                    
+                                <p class="lead">I started this Start Up. becuase i was tired to Search and waste my Time in the Internet about new Open Sources.</p>
+                                <hr>
+                                <p><strong class="text-uppercase">Lucas Gatsas</strong></p>
+                                <p><em class="text-capitalize"> CEO Founder, Developer + Designer (St. Gallen - Switzerland)</em> of <a href="#">Gitlist</a></p>                 
+                            </div>
+                        </div>                          
+                        <div role="tabpanel" class="tab-pane fade" id="daksh">
+                            <div class="tab-inner">
+                                <p class="lead"></p>
+                                <hr>
+                                <p><strong class="text-uppercase">Giancarlo Soverini</strong></p>
+                                <p><em class="text-capitalize">Founder, Developer</em> of <a href="#">Gitlist</a></p>
+                            </div>
+                        </div>                        
+                        <div role="tabpanel" class="tab-pane fade" id="anna">
+                            <div class="tab-inner">
+                                <p class="lead"></p>
+                                <hr>
+                                <p><strong class="text-uppercase">Helen V. Holmes</strong></p>
+                                <p><em class="text-capitalize"> Lead-Designer & Developer</em> at <a href="#">Gitlist</a></p>
+                            </div> 
+                        </div>                        
+                        <div role="tabpanel" class="tab-pane fade" id="wafer">
+                            <div class="tab-inner">
+                                <p class="lead"></p>
+                                <hr>
+                                <p><strong class="text-uppercase">Wafer Baby</strong></p>
+                               <!-- <p><em class="text-capitalize"> Web designer</em> at <a href="#"></a></p> --> 
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <!-- End gitlist.io Images --> 
+
+    <!-- End gitlist.io Images --> 
+
+<!--  <div class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
+                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="../images/ipad.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> --> 
+
+
+       <section id="sep">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="mb">gitlist.io is forwarding</h1>
+                    <h3 class="mb">to San Francsico U.S.A </h3>
+                    <button class="btn btn-conf btn-clear"><a href="mailto:lucasgatsas@gmail.com" style="color:white;">Request for Information</a></button>
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+    </section>
+
+   <!-- <section class="featurette" id="services">
+        <div class="container">
+            <h2 class="featurette-heading">The Second Heading
+                <span class="text-muted">Is Pretty Cool Too.</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+    </section> --> 
+
+    <!-- Embety Footer Section gitlist.io --> 
+    <section id="contact" name="contact"></section>
+    <!--End Embety Footer Section gitlist.io --> 
+
+
+  <section id="why" class="section why">
+        <div class="container">
+        <!--   <h2 class="title text-center"> <br> How Can gitlist Help You?</h2>
+                            <p class="lead centered">Sign Up for Free to Gitlist and Submit your Git Today.</p> --> 
+            <br><br><br><br>
+            <!-- Section Middle and img are in center --> 
+            <section class="featurette" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                       <!--     <img src="../images/figure-4.png" class="img-responsive center-block" alt=""> --> 
+                            <br><br><br><br>
+                            <h2 class="featurette-heading centered">Sign Up  <br><span class="text-muted">Today @ Gitlist</span></h2><br>
+                            <p class="lead centered">And List now your Gits</p>
+    <p class="text-center">
+                                <a href="../g/login" class="btn btn-success btn-outline-rounded green"> start using gitlist<i class="fa fa-paper-plane" style="margin-left:10px;"></i></a>
+                            </p>                        </div>
+                    </div><!--/row-->
+                </div>
+            </section>
+            <br><br>
+        </div>
+    </section>
+
+
+    <!-- Gitlist.io FooterWrap -->
+ <!--   <section id="gitlist-footerwrap">
+        <div class="container">
+            <div class="col-lg-7">
+                <h3>Drop Us A Line</h3>
+                <br>
+            </div>
+        </div>
+    </section> --> 
+    <!-- End Gitlist.io FooterWrap -->
+
+    <!-- contact 1 - promoten Lucas Gatsas and Giancarlo Soverini --> 
+    <section id="gitlist-c">
+        <div class="container"></div>
+    </section>
+    <!-- End contact 1 - promoten Lucas Gatsas and Giancarlo Soverini --> 
+
+    <!-- Footer gitlist.io --> 
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-links-list-copyright">
+                <li> 
+                    <%- partial ('../partials/gitlist-user-counter.ejs') %>  
+                </li>
+            </ul>
+            <ul class="footer-links-list">
+                <%- partial ('../partials/gitlist-social-footer.ejs') %>  
+                <hr>
+            </ul>
+        </div>
+        <hr/>
+        <div class="inner-gitlist-copyright">
+            <%- partial ('../partials/copyright.ejs') %>  
+        </div>
+    </footer>
+    <!-- End Footer gitlist.io --> 
+
+
+
+   
+    <!-- Images Why Use Gitlist.io -->
+    <script type="text/javascript">
+        $(function(){
+            $('a[title]').tooltip();
+        });
+    </script>
+    <!-- End Images Why Use Gitlist.io -->
+    <!-- Bootstrap core JavaScript ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        $('.carousel').carousel({
+            interval: 3500
+        });
+    </script>
+    <script src="js/smoothscroll.js"></script>
+
+    <!-- Pop Ups script css and javascript --> 
+    <script src="http://lipis.github.io/bootstrap-sweetalert/lib/sweet-alert.js"></script>
+    <link rel="stylesheet" href="http://lipis.github.io/bootstrap-sweetalert/lib/sweet-alert.css">
